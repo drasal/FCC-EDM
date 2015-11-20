@@ -6,6 +6,7 @@
 
 #include "datamodel/BareHit.h"
 
+namespace fccedm {
 
 class CaloHit {
 public:
@@ -13,4 +14,5 @@ public:
 
 };
 
+} // Namespace
 #endif

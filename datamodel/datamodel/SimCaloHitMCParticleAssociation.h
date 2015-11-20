@@ -7,6 +7,7 @@
 #include "datamodel/SimCaloHitHandle.h"
 #include "datamodel/MCParticleHandle.h"
 
+namespace fccedm {
 
 class SimCaloHitMCParticleAssociation {
 public:
@@ -16,4 +17,5 @@ public:
 
 };
 
+} // Namespace
 #endif

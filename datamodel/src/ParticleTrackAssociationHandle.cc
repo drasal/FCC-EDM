@@ -6,7 +6,7 @@
 #include "datamodel/ParticleTrackAssociation.h"
 #include "datamodel/ParticleTrackAssociationCollection.h"
 
-
+namespace fccedm {
 
 bool  ParticleTrackAssociationHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const ParticleTrackAssociationHandle& p1, const ParticleTrackAss
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

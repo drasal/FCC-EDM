@@ -6,7 +6,7 @@
 #include "datamodel/CaloHit.h"
 #include "datamodel/CaloHitCollection.h"
 
-
+namespace fccedm {
 
 bool  CaloHitHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const CaloHitHandle& p1, const CaloHitHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

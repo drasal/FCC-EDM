@@ -6,7 +6,7 @@
 #include "datamodel/JetParticleAssociation.h"
 #include "datamodel/JetParticleAssociationCollection.h"
 
-
+namespace fccedm {
 
 bool  JetParticleAssociationHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const JetParticleAssociationHandle& p1, const JetParticleAssocia
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

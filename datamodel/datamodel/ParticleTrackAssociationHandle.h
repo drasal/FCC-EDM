@@ -9,12 +9,14 @@
 // The track
 // author: C. Bernet, B. Hegner
 
-//forward declaration of ParticleTrackAssociation container
-class ParticleTrackAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of ParticleTrackAssociation container
+class ParticleTrackAssociationCollection;
 
 class ParticleTrackAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

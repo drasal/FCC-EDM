@@ -1,5 +1,7 @@
 #include "datamodel/ParticleTrackAssociationCollection.h"
 
+namespace fccedm {
+
 ParticleTrackAssociationCollection::ParticleTrackAssociationCollection() : m_collectionID(0), m_data(new ParticleTrackAssociationVector() ){
 }
 
@@ -71,3 +73,4 @@ void ParticleTrackAssociationCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

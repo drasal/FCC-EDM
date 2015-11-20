@@ -4,7 +4,7 @@
 // Stores flags.
 // author: C. Bernet, B. Hegner
 
-
+namespace fccedm {
 
 class Track {
 public:
@@ -14,4 +14,5 @@ public:
 
 };
 
+} // Namespace
 #endif

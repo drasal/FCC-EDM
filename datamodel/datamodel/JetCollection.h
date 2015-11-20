@@ -15,6 +15,8 @@
 #include "datamodel/Jet.h"
 #include "datamodel/JetHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<Jet> JetVector;
 typedef std::vector<JetHandle> JetHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

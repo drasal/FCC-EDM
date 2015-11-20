@@ -8,12 +8,14 @@
 // contains basic hit information
 // author: C. Bernet, B. Hegner
 
-//forward declaration of TrackHit container
-class TrackHitCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of TrackHit container
+class TrackHitCollection;
 
 class TrackHitHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

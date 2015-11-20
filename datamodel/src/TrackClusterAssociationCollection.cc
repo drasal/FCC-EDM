@@ -1,5 +1,7 @@
 #include "datamodel/TrackClusterAssociationCollection.h"
 
+namespace fccedm {
+
 TrackClusterAssociationCollection::TrackClusterAssociationCollection() : m_collectionID(0), m_data(new TrackClusterAssociationVector() ){
 }
 
@@ -71,3 +73,4 @@ void TrackClusterAssociationCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

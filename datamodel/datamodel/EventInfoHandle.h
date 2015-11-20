@@ -7,12 +7,14 @@
 // Event number
 // author: C. Bernet, B. Hegner
 
-//forward declaration of EventInfo container
-class EventInfoCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of EventInfo container
+class EventInfoCollection;
 
 class EventInfoHandle {
 
@@ -76,4 +78,5 @@ private:
 
 };
 
+} // Namespace
 #endif

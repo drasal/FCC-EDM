@@ -7,6 +7,7 @@
 #include "datamodel/CaloHitHandle.h"
 #include "datamodel/SimCaloHitHandle.h"
 
+namespace fccedm {
 
 class CaloHitAssociation {
 public:
@@ -15,4 +16,5 @@ public:
 
 };
 
+} // Namespace
 #endif

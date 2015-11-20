@@ -6,7 +6,7 @@
 #include "datamodel/Track.h"
 #include "datamodel/TrackCollection.h"
 
-
+namespace fccedm {
 
 bool  TrackHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const TrackHandle& p1, const TrackHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

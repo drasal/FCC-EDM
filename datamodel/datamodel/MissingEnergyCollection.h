@@ -15,6 +15,8 @@
 #include "datamodel/MissingEnergy.h"
 #include "datamodel/MissingEnergyHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<MissingEnergy> MissingEnergyVector;
 typedef std::vector<MissingEnergyHandle> MissingEnergyHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

@@ -7,6 +7,7 @@
 #include "datamodel/ParticleHandle.h"
 #include "datamodel/TrackHandle.h"
 
+namespace fccedm {
 
 class ParticleTrackAssociation {
 public:
@@ -15,4 +16,5 @@ public:
 
 };
 
+} // Namespace
 #endif

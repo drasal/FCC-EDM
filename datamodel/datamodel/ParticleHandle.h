@@ -8,12 +8,14 @@
 // Contains basic particle information.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of Particle container
-class ParticleCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of Particle container
+class ParticleCollection;
 
 class ParticleHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

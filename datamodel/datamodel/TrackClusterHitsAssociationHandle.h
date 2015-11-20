@@ -9,12 +9,14 @@
 // hit handle
 // author: C. Bernet, B. Hegner
 
-//forward declaration of TrackClusterHitsAssociation container
-class TrackClusterHitsAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of TrackClusterHitsAssociation container
+class TrackClusterHitsAssociationCollection;
 
 class TrackClusterHitsAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

@@ -6,7 +6,7 @@
 #include "datamodel/TrackCluster.h"
 #include "datamodel/TrackClusterCollection.h"
 
-
+namespace fccedm {
 
 bool  TrackClusterHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const TrackClusterHandle& p1, const TrackClusterHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

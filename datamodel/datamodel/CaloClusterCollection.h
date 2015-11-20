@@ -15,6 +15,8 @@
 #include "datamodel/CaloCluster.h"
 #include "datamodel/CaloClusterHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<CaloCluster> CaloClusterVector;
 typedef std::vector<CaloClusterHandle> CaloClusterHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

@@ -6,7 +6,7 @@
 #include "datamodel/CaloHitAssociation.h"
 #include "datamodel/CaloHitAssociationCollection.h"
 
-
+namespace fccedm {
 
 bool  CaloHitAssociationHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const CaloHitAssociationHandle& p1, const CaloHitAssociationHand
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

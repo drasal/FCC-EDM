@@ -15,6 +15,8 @@
 #include "datamodel/MET.h"
 #include "datamodel/METHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<MET> METVector;
 typedef std::vector<METHandle> METHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

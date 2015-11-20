@@ -9,12 +9,14 @@
 // The cluster
 // author: C. Bernet, B. Hegner
 
-//forward declaration of ParticleClusterAssociation container
-class ParticleClusterAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of ParticleClusterAssociation container
+class ParticleClusterAssociationCollection;
 
 class ParticleClusterAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

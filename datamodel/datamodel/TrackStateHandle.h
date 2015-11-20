@@ -7,12 +7,14 @@
 // Longitudinal impact parameter
 // author: C. Bernet, B. Hegner
 
-//forward declaration of TrackState container
-class TrackStateCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of TrackState container
+class TrackStateCollection;
 
 class TrackStateHandle {
 
@@ -76,4 +78,5 @@ private:
 
 };
 
+} // Namespace
 #endif

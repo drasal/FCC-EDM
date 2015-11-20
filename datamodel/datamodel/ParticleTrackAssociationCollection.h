@@ -15,6 +15,8 @@
 #include "datamodel/ParticleTrackAssociation.h"
 #include "datamodel/ParticleTrackAssociationHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<ParticleTrackAssociation> ParticleTrackAssociationVector;
 typedef std::vector<ParticleTrackAssociationHandle> ParticleTrackAssociationHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

@@ -9,12 +9,14 @@
 // Fraction of the particle energy used in the hit.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of SimCaloHitMCParticleAssociation container
-class SimCaloHitMCParticleAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of SimCaloHitMCParticleAssociation container
+class SimCaloHitMCParticleAssociationCollection;
 
 class SimCaloHitMCParticleAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

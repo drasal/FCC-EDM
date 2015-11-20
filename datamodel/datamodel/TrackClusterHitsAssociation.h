@@ -7,6 +7,7 @@
 #include "datamodel/TrackClusterHandle.h"
 #include "datamodel/TrackHitHandle.h"
 
+namespace fccedm {
 
 class TrackClusterHitsAssociation {
 public:
@@ -15,4 +16,5 @@ public:
 
 };
 
+} // Namespace
 #endif

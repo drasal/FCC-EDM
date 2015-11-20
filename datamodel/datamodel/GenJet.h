@@ -6,6 +6,7 @@
 
 #include "datamodel/BareJet.h"
 
+namespace fccedm {
 
 class GenJet {
 public:
@@ -13,4 +14,5 @@ public:
 
 };
 
+} // Namespace
 #endif

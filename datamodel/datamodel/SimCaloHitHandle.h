@@ -8,12 +8,14 @@
 // contains basic hit information
 // author: C. Bernet, B. Hegner
 
-//forward declaration of SimCaloHit container
-class SimCaloHitCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of SimCaloHit container
+class SimCaloHitCollection;
 
 class SimCaloHitHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

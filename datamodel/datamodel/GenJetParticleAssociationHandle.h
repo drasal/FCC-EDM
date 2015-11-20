@@ -9,12 +9,14 @@
 // Reference to the mc particle
 // author: C. Bernet, B. Hegner
 
-//forward declaration of GenJetParticleAssociation container
-class GenJetParticleAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of GenJetParticleAssociation container
+class GenJetParticleAssociationCollection;
 
 class GenJetParticleAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

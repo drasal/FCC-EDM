@@ -1,5 +1,7 @@
 #include "datamodel/GenVertexCollection.h"
 
+namespace fccedm {
+
 GenVertexCollection::GenVertexCollection() : m_collectionID(0), m_data(new GenVertexVector() ){
 }
 
@@ -66,3 +68,4 @@ void GenVertexCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

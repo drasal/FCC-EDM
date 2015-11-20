@@ -1,5 +1,7 @@
 #include "datamodel/MCParticleCollection.h"
 
+namespace fccedm {
+
 MCParticleCollection::MCParticleCollection() : m_collectionID(0), m_data(new MCParticleVector() ){
 }
 
@@ -71,3 +73,4 @@ void MCParticleCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

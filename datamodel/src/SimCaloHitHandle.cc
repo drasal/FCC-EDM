@@ -6,7 +6,7 @@
 #include "datamodel/SimCaloHit.h"
 #include "datamodel/SimCaloHitCollection.h"
 
-
+namespace fccedm {
 
 bool  SimCaloHitHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const SimCaloHitHandle& p1, const SimCaloHitHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

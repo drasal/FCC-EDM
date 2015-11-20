@@ -8,12 +8,14 @@
 // Not sure how it's defined.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of GenVertex container
-class GenVertexCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of GenVertex container
+class GenVertexCollection;
 
 class GenVertexHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

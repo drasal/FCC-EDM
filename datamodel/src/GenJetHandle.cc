@@ -6,7 +6,7 @@
 #include "datamodel/GenJet.h"
 #include "datamodel/GenJetCollection.h"
 
-
+namespace fccedm {
 
 bool  GenJetHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const GenJetHandle& p1, const GenJetHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

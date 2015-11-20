@@ -15,6 +15,8 @@
 #include "datamodel/ParticleClusterAssociation.h"
 #include "datamodel/ParticleClusterAssociationHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<ParticleClusterAssociation> ParticleClusterAssociationVector;
 typedef std::vector<ParticleClusterAssociationHandle> ParticleClusterAssociationHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

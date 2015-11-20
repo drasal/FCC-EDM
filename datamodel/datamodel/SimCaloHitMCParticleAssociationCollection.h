@@ -15,6 +15,8 @@
 #include "datamodel/SimCaloHitMCParticleAssociation.h"
 #include "datamodel/SimCaloHitMCParticleAssociationHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<SimCaloHitMCParticleAssociation> SimCaloHitMCParticleAssociationVector;
 typedef std::vector<SimCaloHitMCParticleAssociationHandle> SimCaloHitMCParticleAssociationHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

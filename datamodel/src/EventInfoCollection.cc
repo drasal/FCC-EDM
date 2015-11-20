@@ -1,5 +1,7 @@
 #include "datamodel/EventInfoCollection.h"
 
+namespace fccedm {
+
 EventInfoCollection::EventInfoCollection() : m_collectionID(0), m_data(new EventInfoVector() ){
 }
 
@@ -66,3 +68,4 @@ void EventInfoCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

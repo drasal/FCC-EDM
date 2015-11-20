@@ -8,12 +8,14 @@
 // contains basic hit information
 // author: C. Bernet, B. Hegner
 
-//forward declaration of CaloHit container
-class CaloHitCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of CaloHit container
+class CaloHitCollection;
 
 class CaloHitHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

@@ -6,6 +6,7 @@
 
 #include "datamodel/BareCluster.h"
 
+namespace fccedm {
 
 class SimCaloCluster {
 public:
@@ -13,4 +14,5 @@ public:
 
 };
 
+} // Namespace
 #endif

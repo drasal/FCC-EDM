@@ -15,6 +15,8 @@
 #include "datamodel/Vertex.h"
 #include "datamodel/VertexHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<Vertex> VertexVector;
 typedef std::vector<VertexHandle> VertexHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

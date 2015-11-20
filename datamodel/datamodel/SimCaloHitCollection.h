@@ -15,6 +15,8 @@
 #include "datamodel/SimCaloHit.h"
 #include "datamodel/SimCaloHitHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<SimCaloHit> SimCaloHitVector;
 typedef std::vector<SimCaloHitHandle> SimCaloHitHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

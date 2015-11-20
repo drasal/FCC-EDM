@@ -6,6 +6,7 @@
 
 #include "datamodel/Point.h"
 
+namespace fccedm {
 
 class Vertex {
 public:
@@ -16,4 +17,5 @@ public:
 
 };
 
+} // Namespace
 #endif

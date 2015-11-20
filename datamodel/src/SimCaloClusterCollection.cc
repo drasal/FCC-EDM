@@ -1,5 +1,7 @@
 #include "datamodel/SimCaloClusterCollection.h"
 
+namespace fccedm {
+
 SimCaloClusterCollection::SimCaloClusterCollection() : m_collectionID(0), m_data(new SimCaloClusterVector() ){
 }
 
@@ -66,3 +68,4 @@ void SimCaloClusterCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

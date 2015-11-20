@@ -1,5 +1,7 @@
 #include "datamodel/VertexCollection.h"
 
+namespace fccedm {
+
 VertexCollection::VertexCollection() : m_collectionID(0), m_data(new VertexVector() ){
 }
 
@@ -66,3 +68,4 @@ void VertexCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

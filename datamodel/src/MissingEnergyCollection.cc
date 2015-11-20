@@ -1,5 +1,7 @@
 #include "datamodel/MissingEnergyCollection.h"
 
+namespace fccedm {
+
 MissingEnergyCollection::MissingEnergyCollection() : m_collectionID(0), m_data(new MissingEnergyVector() ){
 }
 
@@ -66,3 +68,4 @@ void MissingEnergyCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

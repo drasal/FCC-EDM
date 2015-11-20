@@ -7,6 +7,7 @@
 #include "datamodel/SimCaloClusterHandle.h"
 #include "datamodel/SimCaloHitHandle.h"
 
+namespace fccedm {
 
 class SimCaloClusterHitAssociation {
 public:
@@ -15,4 +16,5 @@ public:
 
 };
 
+} // Namespace
 #endif

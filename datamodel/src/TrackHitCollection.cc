@@ -1,5 +1,7 @@
 #include "datamodel/TrackHitCollection.h"
 
+namespace fccedm {
+
 TrackHitCollection::TrackHitCollection() : m_collectionID(0), m_data(new TrackHitVector() ){
 }
 
@@ -66,3 +68,4 @@ void TrackHitCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

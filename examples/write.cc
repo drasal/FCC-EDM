@@ -36,13 +36,13 @@ void processEvent(unsigned iEvent, albers::EventStore& store, albers::Writer& wr
   generator.generate();
 
   // fill event information
-  EventInfoCollection* evinfocoll = nullptr;
+  fccedm::EventInfoCollection* evinfocoll = nullptr;
   store.get("EventInfo", evinfocoll);
   if(evinfocoll==nullptr) {
     std::cerr<<"collection EventInfo does not exist!"<<std::endl;
     return;
   }
-  EventInfoHandle evinfo = evinfocoll->create();
+  fccedm::EventInfoHandle evinfo = evinfocoll->create();
   evinfo.mod().Number = iEvent;
 
   // and now for the writing
@@ -67,14 +67,14 @@ int main(){
 
   unsigned nevents=10000;
 
-  EventInfoCollection& evinfocoll = store.create<EventInfoCollection>("EventInfo");
+  fccedm::EventInfoCollection& evinfocoll = store.create<fccedm::EventInfoCollection>("EventInfo");
 
-  writer.registerForWrite<EventInfoCollection>("EventInfo");
+  writer.registerForWrite<fccedm::EventInfoCollection>("EventInfo");
 
   // collections from the dummy generator
-  writer.registerForWrite<ParticleCollection>("GenParticle");
-  writer.registerForWrite<JetCollection>("GenJet");
-  writer.registerForWrite<JetParticleAssociationCollection>("GenJetParticle");
+  writer.registerForWrite<fccedm::ParticleCollection>("GenParticle");
+  writer.registerForWrite<fccedm::JetCollection>("GenJet");
+  writer.registerForWrite<fccedm::JetParticleAssociationCollection>("GenJetParticle");
 
   for(unsigned i=0; i<nevents; ++i) {
     processEvent(i, store, writer, generator);

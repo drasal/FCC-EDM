@@ -6,7 +6,7 @@
 #include "datamodel/ParticleMCAssociation.h"
 #include "datamodel/ParticleMCAssociationCollection.h"
 
-
+namespace fccedm {
 
 bool  ParticleMCAssociationHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const ParticleMCAssociationHandle& p1, const ParticleMCAssociati
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

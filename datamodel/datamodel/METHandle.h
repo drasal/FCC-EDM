@@ -7,12 +7,14 @@
 // 
 // author: C. Bernet, B. Hegner
 
-//forward declaration of MET container
-class METCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of MET container
+class METCollection;
 
 class METHandle {
 
@@ -76,4 +78,5 @@ private:
 
 };
 
+} // Namespace
 #endif

@@ -1,5 +1,7 @@
 #include "datamodel/SimCaloHitMCParticleAssociationCollection.h"
 
+namespace fccedm {
+
 SimCaloHitMCParticleAssociationCollection::SimCaloHitMCParticleAssociationCollection() : m_collectionID(0), m_data(new SimCaloHitMCParticleAssociationVector() ){
 }
 
@@ -71,3 +73,4 @@ void SimCaloHitMCParticleAssociationCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

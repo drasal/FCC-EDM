@@ -3,6 +3,7 @@
 
 #include "datamodel/Point.h"
 
+namespace fccedm {
 
 class BareCluster {
 public:
@@ -13,4 +14,5 @@ public:
 
 };
 
+} // Namespace
 #endif

@@ -15,6 +15,8 @@
 #include "datamodel/VertexTrackAssociation.h"
 #include "datamodel/VertexTrackAssociationHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<VertexTrackAssociation> VertexTrackAssociationVector;
 typedef std::vector<VertexTrackAssociationHandle> VertexTrackAssociationHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

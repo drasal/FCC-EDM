@@ -1,5 +1,7 @@
 #include "datamodel/VertexTrackAssociationCollection.h"
 
+namespace fccedm {
+
 VertexTrackAssociationCollection::VertexTrackAssociationCollection() : m_collectionID(0), m_data(new VertexTrackAssociationVector() ){
 }
 
@@ -71,3 +73,4 @@ void VertexTrackAssociationCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

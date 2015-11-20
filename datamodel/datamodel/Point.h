@@ -1,7 +1,7 @@
 #ifndef Point_H 
 #define Point_H
 
-
+namespace fccedm {
 
 class Point {
 public:
@@ -11,4 +11,5 @@ public:
 
 };
 
+} // Namespace
 #endif

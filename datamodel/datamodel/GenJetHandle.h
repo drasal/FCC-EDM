@@ -8,12 +8,14 @@
 // Basic jet information.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of GenJet container
-class GenJetCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of GenJet container
+class GenJetCollection;
 
 class GenJetHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

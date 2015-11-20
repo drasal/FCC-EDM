@@ -6,6 +6,7 @@
 
 #include "datamodel/Point.h"
 
+namespace fccedm {
 
 class GenVertex {
 public:
@@ -14,4 +15,5 @@ public:
 
 };
 
+} // Namespace
 #endif

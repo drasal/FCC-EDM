@@ -6,7 +6,7 @@
 #include "datamodel/GenVertex.h"
 #include "datamodel/GenVertexCollection.h"
 
-
+namespace fccedm {
 
 bool  GenVertexHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const GenVertexHandle& p1, const GenVertexHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

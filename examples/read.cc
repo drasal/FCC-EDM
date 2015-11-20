@@ -24,6 +24,8 @@
 #include "albers/Reader.h"
 #include "albers/Registry.h"
 
+using namespace fccedm;
+
 void processEvent(albers::EventStore& store, bool verbose,
 		  albers::Reader& reader) {
 

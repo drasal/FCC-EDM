@@ -6,7 +6,7 @@
 #include "datamodel/EventInfo.h"
 #include "datamodel/EventInfoCollection.h"
 
-
+namespace fccedm {
 
 bool  EventInfoHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const EventInfoHandle& p1, const EventInfoHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

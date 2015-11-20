@@ -1,5 +1,7 @@
 #include "datamodel/JetCollection.h"
 
+namespace fccedm {
+
 JetCollection::JetCollection() : m_collectionID(0), m_data(new JetVector() ){
 }
 
@@ -66,3 +68,4 @@ void JetCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

@@ -15,6 +15,8 @@
 #include "datamodel/JetParticleAssociation.h"
 #include "datamodel/JetParticleAssociationHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<JetParticleAssociation> JetParticleAssociationVector;
 typedef std::vector<JetParticleAssociationHandle> JetParticleAssociationHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

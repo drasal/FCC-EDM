@@ -4,6 +4,7 @@
 #include "datamodel/LorentzVector.h"
 #include "datamodel/Point.h"
 
+namespace fccedm {
 
 class BareParticle {
 public:
@@ -16,4 +17,5 @@ public:
 
 };
 
+} // Namespace
 #endif

@@ -6,7 +6,7 @@
 #include "datamodel/SimCaloClusterHitAssociation.h"
 #include "datamodel/SimCaloClusterHitAssociationCollection.h"
 
-
+namespace fccedm {
 
 bool  SimCaloClusterHitAssociationHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const SimCaloClusterHitAssociationHandle& p1, const SimCaloClust
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

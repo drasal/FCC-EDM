@@ -1,5 +1,7 @@
 #include "datamodel/MCParticleAssociationCollection.h"
 
+namespace fccedm {
+
 MCParticleAssociationCollection::MCParticleAssociationCollection() : m_collectionID(0), m_data(new MCParticleAssociationVector() ){
 }
 
@@ -71,3 +73,4 @@ void MCParticleAssociationCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

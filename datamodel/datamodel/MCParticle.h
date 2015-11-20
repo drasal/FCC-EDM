@@ -8,6 +8,7 @@
 #include "datamodel/GenVertexHandle.h"
 #include "datamodel/GenVertexHandle.h"
 
+namespace fccedm {
 
 class MCParticle {
 public:
@@ -17,4 +18,5 @@ public:
 
 };
 
+} // Namespace
 #endif

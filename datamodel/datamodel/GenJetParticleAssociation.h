@@ -7,6 +7,7 @@
 #include "datamodel/GenJetHandle.h"
 #include "datamodel/MCParticleHandle.h"
 
+namespace fccedm {
 
 class GenJetParticleAssociation {
 public:
@@ -15,4 +16,5 @@ public:
 
 };
 
+} // Namespace
 #endif

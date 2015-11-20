@@ -1,5 +1,7 @@
 #include "datamodel/METCollection.h"
 
+namespace fccedm {
+
 METCollection::METCollection() : m_collectionID(0), m_data(new METVector() ){
 }
 
@@ -66,3 +68,4 @@ void METCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

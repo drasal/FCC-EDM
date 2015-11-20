@@ -6,6 +6,7 @@
 
 #include "datamodel/BareParticle.h"
 
+namespace fccedm {
 
 class Particle {
 public:
@@ -13,4 +14,5 @@ public:
 
 };
 
+} // Namespace
 #endif

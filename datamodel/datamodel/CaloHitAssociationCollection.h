@@ -15,6 +15,8 @@
 #include "datamodel/CaloHitAssociation.h"
 #include "datamodel/CaloHitAssociationHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<CaloHitAssociation> CaloHitAssociationVector;
 typedef std::vector<CaloHitAssociationHandle> CaloHitAssociationHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

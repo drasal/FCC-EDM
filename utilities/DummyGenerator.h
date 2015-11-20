@@ -8,9 +8,12 @@ namespace albers {
   class Writer;
 }
 
-class ParticleHandle;
 class TLorentzVector;
 class TVector3;
+
+namespace fccedm {
+  class ParticleHandle;
+}
 
 class DummyGenerator {
   /// COLIN need verbose flag.
@@ -31,7 +34,7 @@ private:
   void generate_jet(float energy, const TVector3& direction);
 
   /// generate a particle
-  std::pair<bool, ParticleHandle> generate_particle(const TLorentzVector* lv = nullptr, int type=-1);
+  std::pair<bool, fccedm::ParticleHandle> generate_particle(const TLorentzVector* lv = nullptr, int type=-1);
 
   /// number of jets
   unsigned m_njets;

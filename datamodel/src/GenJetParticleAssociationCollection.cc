@@ -1,5 +1,7 @@
 #include "datamodel/GenJetParticleAssociationCollection.h"
 
+namespace fccedm {
+
 GenJetParticleAssociationCollection::GenJetParticleAssociationCollection() : m_collectionID(0), m_data(new GenJetParticleAssociationVector() ){
 }
 
@@ -71,3 +73,4 @@ void GenJetParticleAssociationCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

@@ -30,9 +30,9 @@ DummyGenerator::DummyGenerator(int npart,
   m_nprint(-1),
   m_ievt(0) {
 
-  auto& coll1 = m_store.create<ParticleCollection>("GenParticle");
-  auto& coll2 = m_store.create<JetCollection>("GenJet");
-  auto& coll3 = m_store.create<JetParticleAssociationCollection>("GenJetParticle");
+  auto& coll1 = m_store.create<fccedm::ParticleCollection>("GenParticle");
+  auto& coll2 = m_store.create<fccedm::JetCollection>("GenJet");
+  auto& coll3 = m_store.create<fccedm::JetParticleAssociationCollection>("GenJetParticle");
 }
 
 
@@ -66,15 +66,15 @@ void DummyGenerator::generate_jet(float energy, const TVector3& direction) {
     std::cout<<"generate jet with nparticles = "
 	     << npart << std::endl;
 
-  JetCollection* jcoll = nullptr;
+  fccedm::JetCollection* jcoll = nullptr;
   m_store.get("GenJet", jcoll);
-  JetHandle jet = jcoll->create();
-  JetParticleAssociationCollection* acoll = nullptr;
+  fccedm::JetHandle jet = jcoll->create();
+  fccedm::JetParticleAssociationCollection* acoll = nullptr;
   m_store.get("GenJetParticle", acoll);
   TLorentzVector p4star;
 
   // keeping track of all created particles to boost them later on
-  std::vector<ParticleHandle> particles;
+  std::vector<fccedm::ParticleHandle> particles;
 
   for(unsigned i=0; i<npart-1; ++i) {
     bool success = false;
@@ -83,9 +83,9 @@ void DummyGenerator::generate_jet(float energy, const TVector3& direction) {
       if(not result.first)
 	continue;
       else {
-	ParticleHandle& ptc = result.second;
+	fccedm::ParticleHandle& ptc = result.second;
 	p4star += utils::lvFromPOD( ptc.read().Core.P4 );
-	JetParticleAssociationHandle assoc = acoll->create();
+	fccedm::JetParticleAssociationHandle assoc = acoll->create();
 	assoc.mod().Jet = jet;
 	assoc.mod().Particle = ptc;
 	particles.push_back(ptc);
@@ -97,10 +97,10 @@ void DummyGenerator::generate_jet(float energy, const TVector3& direction) {
   // last particle is created to allow vector momentum conservation in jet com frame
   TLorentzVector opposite(-p4star.Vect(), p4star.E());
   auto result = generate_particle(&opposite);
-  ParticleHandle& ptc = result.second;
+  fccedm::ParticleHandle& ptc = result.second;
   TLorentzVector final = utils::lvFromPOD( ptc.read().Core.P4 );
   p4star += final;
-  JetParticleAssociationHandle assoc = acoll->create();
+  fccedm::JetParticleAssociationHandle assoc = acoll->create();
   assoc.mod().Jet = jet;
   assoc.mod().Particle = ptc;
   particles.push_back(ptc);
@@ -111,7 +111,7 @@ void DummyGenerator::generate_jet(float energy, const TVector3& direction) {
   float beta = sqrt(1 - 1/(gamma*gamma));
   TVector3 boost(direction.Unit());
   boost *= static_cast<double>(beta);
-  for(ParticleHandle& ptc : particles) {
+  for(fccedm::ParticleHandle& ptc : particles) {
     TLorentzVector lv = utils::lvFromPOD( ptc.read().Core.P4 );
     lv.Boost( boost );
     // BareParticle core = ptc.Core();
@@ -131,7 +131,7 @@ void DummyGenerator::generate_jet(float energy, const TVector3& direction) {
   // jet.setCore( core );
 }
 
-std::pair<bool, ParticleHandle> DummyGenerator::generate_particle(const TLorentzVector* lv, int itype) {
+std::pair<bool, fccedm::ParticleHandle> DummyGenerator::generate_particle(const TLorentzVector* lv, int itype) {
 
   // particle type and mass
   if (itype == -1) {
@@ -154,7 +154,7 @@ std::pair<bool, ParticleHandle> DummyGenerator::generate_particle(const TLorentz
   default: break;
   }
 
-  LorentzVector lvpod;
+  fccedm::LorentzVector lvpod;
   if( lv == nullptr ) {
     float phistar = m_phi(m_engine);
     float thetastar = m_theta(m_engine);
@@ -189,9 +189,9 @@ std::pair<bool, ParticleHandle> DummyGenerator::generate_particle(const TLorentz
   }
   int id = itype;
 
-  ParticleCollection* pcoll = nullptr;
+  fccedm::ParticleCollection* pcoll = nullptr;
   m_store.get("GenParticle", pcoll);
-  ParticleHandle ptc = pcoll->create();
+  fccedm::ParticleHandle ptc = pcoll->create();
   // BareParticle core = ptc.Core();
   ptc.mod().Core.Type = id; 
   ptc.mod().Core.P4 = lvpod;
@@ -202,5 +202,5 @@ std::pair<bool, ParticleHandle> DummyGenerator::generate_particle(const TLorentz
     std::cout<<"\tparticle "<<ptc.read().Core.Type<<" "<<lv.Eta()<<" "<<lv.Phi()<<" "<<lv.Pt()<<" "<<lv.E()<<std::endl;
   }
 
-  return std::pair<bool, ParticleHandle>(true, ptc);
+  return std::pair<bool, fccedm::ParticleHandle>(true, ptc);
 }

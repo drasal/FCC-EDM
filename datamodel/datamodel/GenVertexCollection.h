@@ -15,6 +15,8 @@
 #include "datamodel/GenVertex.h"
 #include "datamodel/GenVertexHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<GenVertex> GenVertexVector;
 typedef std::vector<GenVertexHandle> GenVertexHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

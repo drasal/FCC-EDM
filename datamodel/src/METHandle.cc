@@ -6,7 +6,7 @@
 #include "datamodel/MET.h"
 #include "datamodel/METCollection.h"
 
-
+namespace fccedm {
 
 bool  METHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const METHandle& p1, const METHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

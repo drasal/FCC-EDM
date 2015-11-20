@@ -6,7 +6,7 @@
 #include "datamodel/MCParticle.h"
 #include "datamodel/MCParticleCollection.h"
 
-
+namespace fccedm {
 
 bool  MCParticleHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const MCParticleHandle& p1, const MCParticleHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

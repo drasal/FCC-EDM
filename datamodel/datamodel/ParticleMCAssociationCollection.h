@@ -15,6 +15,8 @@
 #include "datamodel/ParticleMCAssociation.h"
 #include "datamodel/ParticleMCAssociationHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<ParticleMCAssociation> ParticleMCAssociationVector;
 typedef std::vector<ParticleMCAssociationHandle> ParticleMCAssociationHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

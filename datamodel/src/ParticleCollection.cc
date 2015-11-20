@@ -1,5 +1,7 @@
 #include "datamodel/ParticleCollection.h"
 
+namespace fccedm {
+
 ParticleCollection::ParticleCollection() : m_collectionID(0), m_data(new ParticleVector() ){
 }
 
@@ -66,3 +68,4 @@ void ParticleCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

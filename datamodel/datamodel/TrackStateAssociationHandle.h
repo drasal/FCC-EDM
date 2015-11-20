@@ -9,12 +9,14 @@
 // The track state.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of TrackStateAssociation container
-class TrackStateAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of TrackStateAssociation container
+class TrackStateAssociationCollection;
 
 class TrackStateAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

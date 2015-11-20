@@ -8,12 +8,14 @@
 // contains basic cluster information.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of SimCaloCluster container
-class SimCaloClusterCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of SimCaloCluster container
+class SimCaloClusterCollection;
 
 class SimCaloClusterHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

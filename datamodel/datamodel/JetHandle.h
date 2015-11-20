@@ -8,12 +8,14 @@
 // Basic jet information.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of Jet container
-class JetCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of Jet container
+class JetCollection;
 
 class JetHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

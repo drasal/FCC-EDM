@@ -7,12 +7,14 @@
 // Stores flags.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of Track container
-class TrackCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of Track container
+class TrackCollection;
 
 class TrackHandle {
 
@@ -76,4 +78,5 @@ private:
 
 };
 
+} // Namespace
 #endif

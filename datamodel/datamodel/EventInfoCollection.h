@@ -15,6 +15,8 @@
 #include "datamodel/EventInfo.h"
 #include "datamodel/EventInfoHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<EventInfo> EventInfoVector;
 typedef std::vector<EventInfoHandle> EventInfoHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

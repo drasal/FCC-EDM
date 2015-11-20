@@ -7,6 +7,7 @@
 #include "datamodel/JetHandle.h"
 #include "datamodel/ParticleHandle.h"
 
+namespace fccedm {
 
 class JetParticleAssociation {
 public:
@@ -15,4 +16,5 @@ public:
 
 };
 
+} // Namespace
 #endif

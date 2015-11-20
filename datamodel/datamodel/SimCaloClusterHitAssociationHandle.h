@@ -9,12 +9,14 @@
 // The hit
 // author: C. Bernet, B. Hegner
 
-//forward declaration of SimCaloClusterHitAssociation container
-class SimCaloClusterHitAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of SimCaloClusterHitAssociation container
+class SimCaloClusterHitAssociationCollection;
 
 class SimCaloClusterHitAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

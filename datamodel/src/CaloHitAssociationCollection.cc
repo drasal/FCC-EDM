@@ -1,5 +1,7 @@
 #include "datamodel/CaloHitAssociationCollection.h"
 
+namespace fccedm {
+
 CaloHitAssociationCollection::CaloHitAssociationCollection() : m_collectionID(0), m_data(new CaloHitAssociationVector() ){
 }
 
@@ -71,3 +73,4 @@ void CaloHitAssociationCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

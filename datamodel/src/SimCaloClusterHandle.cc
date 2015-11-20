@@ -6,7 +6,7 @@
 #include "datamodel/SimCaloCluster.h"
 #include "datamodel/SimCaloClusterCollection.h"
 
-
+namespace fccedm {
 
 bool  SimCaloClusterHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const SimCaloClusterHandle& p1, const SimCaloClusterHandle& p2 )
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

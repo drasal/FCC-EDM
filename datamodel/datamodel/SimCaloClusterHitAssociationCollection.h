@@ -15,6 +15,8 @@
 #include "datamodel/SimCaloClusterHitAssociation.h"
 #include "datamodel/SimCaloClusterHitAssociationHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<SimCaloClusterHitAssociation> SimCaloClusterHitAssociationVector;
 typedef std::vector<SimCaloClusterHitAssociationHandle> SimCaloClusterHitAssociationHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

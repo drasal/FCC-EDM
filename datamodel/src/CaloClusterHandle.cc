@@ -6,7 +6,7 @@
 #include "datamodel/CaloCluster.h"
 #include "datamodel/CaloClusterCollection.h"
 
-
+namespace fccedm {
 
 bool  CaloClusterHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const CaloClusterHandle& p1, const CaloClusterHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

@@ -6,7 +6,7 @@
 #include "datamodel/SimCaloHitMCParticleAssociation.h"
 #include "datamodel/SimCaloHitMCParticleAssociationCollection.h"
 
-
+namespace fccedm {
 
 bool  SimCaloHitMCParticleAssociationHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const SimCaloHitMCParticleAssociationHandle& p1, const SimCaloHi
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

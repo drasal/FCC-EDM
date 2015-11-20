@@ -1,5 +1,7 @@
 #include "datamodel/TrackCollection.h"
 
+namespace fccedm {
+
 TrackCollection::TrackCollection() : m_collectionID(0), m_data(new TrackVector() ){
 }
 
@@ -66,3 +68,4 @@ void TrackCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

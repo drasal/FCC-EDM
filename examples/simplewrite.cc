@@ -37,17 +37,17 @@ int main(){
 
   unsigned nevents=10000;
 
-  EventInfoCollection& evinfocoll = store.create<EventInfoCollection>("EventInfo");
-  MCParticleCollection& pcoll = store.create<MCParticleCollection>("MCParticle");
+  fccedm::EventInfoCollection& evinfocoll = store.create<fccedm::EventInfoCollection>("EventInfo");
+  fccedm::MCParticleCollection& pcoll = store.create<fccedm::MCParticleCollection>("MCParticle");
 
-  writer.registerForWrite<EventInfoCollection>("EventInfo");
+  writer.registerForWrite<fccedm::EventInfoCollection>("EventInfo");
 
   // collections from the dummy generator
-  writer.registerForWrite<MCParticleCollection>("MCParticle");
+  writer.registerForWrite<fccedm::MCParticleCollection>("MCParticle");
 
   for(unsigned iev=0; iev<nevents; ++iev) {
     // fill event information
-    EventInfoCollection* evinfocoll = nullptr;
+    fccedm::EventInfoCollection* evinfocoll = nullptr;
     // here, asking the store for the collection.
     // could also just reuse the reference obtained at the time of the creation
     // of the collection
@@ -56,10 +56,10 @@ int main(){
       std::cerr<<"collection EventInfo does not exist!"<<std::endl;
       return 1;
     }
-    EventInfoHandle evinfo = evinfocoll->create();
+    fccedm::EventInfoHandle evinfo = evinfocoll->create();
     evinfo.mod().Number = iev;
 
-    MCParticleHandle ptc = pcoll.create();
+    fccedm::MCParticleHandle ptc = pcoll.create();
     ptc.mod().Core.Type = 25;
     auto& p4 = ptc.mod().Core.P4;
     p4.Px = static_cast<float>(iev);

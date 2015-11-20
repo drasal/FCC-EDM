@@ -1,5 +1,7 @@
 #include "datamodel/SimCaloClusterHitAssociationCollection.h"
 
+namespace fccedm {
+
 SimCaloClusterHitAssociationCollection::SimCaloClusterHitAssociationCollection() : m_collectionID(0), m_data(new SimCaloClusterHitAssociationVector() ){
 }
 
@@ -71,3 +73,4 @@ void SimCaloClusterHitAssociationCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

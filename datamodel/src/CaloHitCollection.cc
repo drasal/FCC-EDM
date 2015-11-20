@@ -1,5 +1,7 @@
 #include "datamodel/CaloHitCollection.h"
 
+namespace fccedm {
+
 CaloHitCollection::CaloHitCollection() : m_collectionID(0), m_data(new CaloHitVector() ){
 }
 
@@ -66,3 +68,4 @@ void CaloHitCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

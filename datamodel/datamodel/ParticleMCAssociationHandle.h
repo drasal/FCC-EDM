@@ -9,12 +9,14 @@
 // Reference to the Monte-Carlo particle
 // author: C. Bernet, B. Hegner
 
-//forward declaration of ParticleMCAssociation container
-class ParticleMCAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of ParticleMCAssociation container
+class ParticleMCAssociationCollection;
 
 class ParticleMCAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

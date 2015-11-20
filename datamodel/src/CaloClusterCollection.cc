@@ -1,5 +1,7 @@
 #include "datamodel/CaloClusterCollection.h"
 
+namespace fccedm {
+
 CaloClusterCollection::CaloClusterCollection() : m_collectionID(0), m_data(new CaloClusterVector() ){
 }
 
@@ -66,3 +68,4 @@ void CaloClusterCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

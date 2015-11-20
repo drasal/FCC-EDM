@@ -6,7 +6,7 @@
 #include "datamodel/MissingEnergy.h"
 #include "datamodel/MissingEnergyCollection.h"
 
-
+namespace fccedm {
 
 bool  MissingEnergyHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const MissingEnergyHandle& p1, const MissingEnergyHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

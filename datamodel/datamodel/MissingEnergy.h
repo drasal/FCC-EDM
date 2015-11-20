@@ -4,7 +4,7 @@
 // 
 // author: C. Bernet, B. Hegner
 
-
+namespace fccedm {
 
 class MissingEnergy {
 public:
@@ -13,4 +13,5 @@ public:
 
 };
 
+} // Namespace
 #endif

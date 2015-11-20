@@ -15,6 +15,8 @@
 #include "datamodel/GenJet.h"
 #include "datamodel/GenJetHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<GenJet> GenJetVector;
 typedef std::vector<GenJetHandle> GenJetHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

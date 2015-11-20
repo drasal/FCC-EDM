@@ -9,12 +9,14 @@
 // The daughter.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of MCParticleAssociation container
-class MCParticleAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of MCParticleAssociation container
+class MCParticleAssociationCollection;
 
 class MCParticleAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

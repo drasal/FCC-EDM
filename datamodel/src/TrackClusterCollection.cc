@@ -1,5 +1,7 @@
 #include "datamodel/TrackClusterCollection.h"
 
+namespace fccedm {
+
 TrackClusterCollection::TrackClusterCollection() : m_collectionID(0), m_data(new TrackClusterVector() ){
 }
 
@@ -66,3 +68,4 @@ void TrackClusterCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

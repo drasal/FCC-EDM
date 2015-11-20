@@ -15,6 +15,8 @@
 #include "datamodel/SimCaloCluster.h"
 #include "datamodel/SimCaloClusterHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<SimCaloCluster> SimCaloClusterVector;
 typedef std::vector<SimCaloClusterHandle> SimCaloClusterHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

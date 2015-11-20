@@ -6,7 +6,7 @@
 #include "datamodel/VertexTrackAssociation.h"
 #include "datamodel/VertexTrackAssociationCollection.h"
 
-
+namespace fccedm {
 
 bool  VertexTrackAssociationHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const VertexTrackAssociationHandle& p1, const VertexTrackAssocia
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

@@ -6,7 +6,7 @@
 #include "datamodel/TrackStateAssociation.h"
 #include "datamodel/TrackStateAssociationCollection.h"
 
-
+namespace fccedm {
 
 bool  TrackStateAssociationHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const TrackStateAssociationHandle& p1, const TrackStateAssociati
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace

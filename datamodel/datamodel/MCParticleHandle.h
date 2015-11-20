@@ -10,12 +10,14 @@
 // Reference to the vertex in which the particle disappeared.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of MCParticle container
-class MCParticleCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of MCParticle container
+class MCParticleCollection;
 
 class MCParticleHandle {
 
@@ -79,4 +81,5 @@ private:
 
 };
 
+} // Namespace
 #endif

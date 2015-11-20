@@ -8,12 +8,14 @@
 // contains basic cluster information
 // author: C. Bernet, B. Hegner
 
-//forward declaration of TrackCluster container
-class TrackClusterCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of TrackCluster container
+class TrackClusterCollection;
 
 class TrackClusterHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

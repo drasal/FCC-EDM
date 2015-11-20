@@ -9,12 +9,14 @@
 // Weight of the track in the vertex.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of VertexTrackAssociation container
-class VertexTrackAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of VertexTrackAssociation container
+class VertexTrackAssociationCollection;
 
 class VertexTrackAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

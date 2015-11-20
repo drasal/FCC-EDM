@@ -7,6 +7,7 @@
 #include "datamodel/ParticleHandle.h"
 #include "datamodel/MCParticleHandle.h"
 
+namespace fccedm {
 
 class ParticleMCAssociation {
 public:
@@ -15,4 +16,5 @@ public:
 
 };
 
+} // Namespace
 #endif

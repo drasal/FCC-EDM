@@ -1,5 +1,7 @@
 #include "datamodel/ParticleClusterAssociationCollection.h"
 
+namespace fccedm {
+
 ParticleClusterAssociationCollection::ParticleClusterAssociationCollection() : m_collectionID(0), m_data(new ParticleClusterAssociationVector() ){
 }
 
@@ -71,3 +73,4 @@ void ParticleClusterAssociationCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

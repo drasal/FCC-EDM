@@ -13,10 +13,10 @@
 namespace utils {
 
 
-  std::vector<ParticleHandle> unused(const std::vector<ParticleHandle>& p1s,
-				     const std::vector<ParticleHandle>& p2s) {
-    std::vector<ParticleHandle> results;
-    std::set<ParticleHandle> p2set;
+  std::vector<fccedm::ParticleHandle> unused(const std::vector<fccedm::ParticleHandle>& p1s,
+				     const std::vector<fccedm::ParticleHandle>& p2s) {
+    std::vector<fccedm::ParticleHandle> results;
+    std::set<fccedm::ParticleHandle> p2set;
     std::copy( p2s.begin(), p2s.end(),
 	       std::inserter( p2set, p2set.end() ) );
     //    std::cout<<"set"<<std::endl;
@@ -35,13 +35,13 @@ namespace utils {
   }
 
 
-  std::vector<ParticleHandle> inCone(const LorentzVector& lv,
-				     const std::vector<ParticleHandle>& ps,
+  std::vector<fccedm::ParticleHandle> inCone(const fccedm::LorentzVector& lv,
+				     const std::vector<fccedm::ParticleHandle>& ps,
 				     float deltaRMax,
 				     float exclusion ) {
     float dR2Max = deltaRMax*deltaRMax;
     float exc2 = exclusion*exclusion;
-    std::vector<ParticleHandle> results;
+    std::vector<fccedm::ParticleHandle> results;
     for(const auto& particle : ps) {
       float dR2 = deltaR2(lv, particle.read().Core.P4);
       if( dR2>exc2 && dR2 <= dR2Max ) {
@@ -52,17 +52,17 @@ namespace utils {
   }
 
 
-  float sumPt(const std::vector<ParticleHandle>& ps) {
+  float sumPt(const std::vector<fccedm::ParticleHandle>& ps) {
     return sumP4(ps).Vect().Pt();
   }
 
 
-  float sumP(const std::vector<ParticleHandle>& ps) {
+  float sumP(const std::vector<fccedm::ParticleHandle>& ps) {
     return sumP4(ps).Vect().Mag();
   }
 
 
-  TLorentzVector sumP4(const std::vector<ParticleHandle>& ps) {
+  TLorentzVector sumP4(const std::vector<fccedm::ParticleHandle>& ps) {
     TLorentzVector sum; 
     for(const auto& particle : ps) {
       TLorentzVector lv = lvFromPOD( particle.read().Core.P4 );
@@ -74,9 +74,9 @@ namespace utils {
 
 } // namespace
 
-std::ostream& operator<<(std::ostream& out, const ParticleHandle& ptc) {
+std::ostream& operator<<(std::ostream& out, const fccedm::ParticleHandle& ptc) {
   if(not out) return out;
-  const BareParticle& pcore = ptc.read().Core; 
+  const fccedm::BareParticle& pcore = ptc.read().Core;
   TLorentzVector p4 = utils::lvFromPOD(pcore.P4);
   out<<"particle ID "<<pcore.Type
      <<" e "<<p4.E()

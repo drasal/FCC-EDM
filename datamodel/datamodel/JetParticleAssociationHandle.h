@@ -9,12 +9,14 @@
 // Reference to the particle
 // author: C. Bernet, B. Hegner
 
-//forward declaration of JetParticleAssociation container
-class JetParticleAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of JetParticleAssociation container
+class JetParticleAssociationCollection;
 
 class JetParticleAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

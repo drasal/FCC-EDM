@@ -4,7 +4,7 @@
 // Longitudinal impact parameter
 // author: C. Bernet, B. Hegner
 
-
+namespace fccedm {
 
 class TrackState {
 public:
@@ -15,4 +15,5 @@ public:
 
 };
 
+} // Namespace
 #endif

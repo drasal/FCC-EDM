@@ -15,6 +15,8 @@
 #include "datamodel/MCParticle.h"
 #include "datamodel/MCParticleHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<MCParticle> MCParticleVector;
 typedef std::vector<MCParticleHandle> MCParticleHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

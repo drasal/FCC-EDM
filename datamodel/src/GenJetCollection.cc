@@ -1,5 +1,7 @@
 #include "datamodel/GenJetCollection.h"
 
+namespace fccedm {
+
 GenJetCollection::GenJetCollection() : m_collectionID(0), m_data(new GenJetVector() ){
 }
 
@@ -66,3 +68,4 @@ void GenJetCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

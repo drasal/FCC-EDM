@@ -4,7 +4,7 @@
 // Event number
 // author: C. Bernet, B. Hegner
 
-
+namespace fccedm {
 
 class EventInfo {
 public:
@@ -12,4 +12,5 @@ public:
 
 };
 
+} // Namespace
 #endif

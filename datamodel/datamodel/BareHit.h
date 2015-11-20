@@ -1,7 +1,7 @@
 #ifndef BareHit_H 
 #define BareHit_H
 
-
+namespace fccedm {
 
 class BareHit {
 public:
@@ -12,4 +12,5 @@ public:
 
 };
 
+} // Namespace
 #endif

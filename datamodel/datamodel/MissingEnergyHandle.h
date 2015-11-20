@@ -7,12 +7,14 @@
 // 
 // author: C. Bernet, B. Hegner
 
-//forward declaration of MissingEnergy container
-class MissingEnergyCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of MissingEnergy container
+class MissingEnergyCollection;
 
 class MissingEnergyHandle {
 
@@ -76,4 +78,5 @@ private:
 
 };
 
+} // Namespace
 #endif

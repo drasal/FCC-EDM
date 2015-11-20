@@ -9,12 +9,14 @@
 // The simulated hit.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of CaloHitAssociation container
-class CaloHitAssociationCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of CaloHitAssociation container
+class CaloHitAssociationCollection;
 
 class CaloHitAssociationHandle {
 
@@ -78,4 +80,5 @@ private:
 
 };
 
+} // Namespace
 #endif

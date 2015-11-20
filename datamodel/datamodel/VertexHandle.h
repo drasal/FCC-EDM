@@ -8,12 +8,14 @@
 // Stores flags.
 // author: C. Bernet, B. Hegner
 
-//forward declaration of Vertex container
-class VertexCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of Vertex container
+class VertexCollection;
 
 class VertexHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

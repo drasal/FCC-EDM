@@ -3,6 +3,7 @@
 
 #include "datamodel/LorentzVector.h"
 
+namespace fccedm {
 
 class BareJet {
 public:
@@ -12,4 +13,5 @@ public:
 
 };
 
+} // Namespace
 #endif

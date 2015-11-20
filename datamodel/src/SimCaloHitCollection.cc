@@ -1,5 +1,7 @@
 #include "datamodel/SimCaloHitCollection.h"
 
+namespace fccedm {
+
 SimCaloHitCollection::SimCaloHitCollection() : m_collectionID(0), m_data(new SimCaloHitVector() ){
 }
 
@@ -66,3 +68,4 @@ void SimCaloHitCollection::print() const {
            <<", nhandles "<<m_handles.size()<<std::endl;
 }
 
+} // Namespace

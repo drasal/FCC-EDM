@@ -7,6 +7,7 @@
 #include "datamodel/TrackHandle.h"
 #include "datamodel/VertexHandle.h"
 
+namespace fccedm {
 
 class VertexTrackAssociation {
 public:
@@ -16,4 +17,5 @@ public:
 
 };
 
+} // Namespace
 #endif

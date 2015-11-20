@@ -15,6 +15,8 @@
 #include "datamodel/TrackState.h"
 #include "datamodel/TrackStateHandle.h"
 
+namespace fccedm {
+
 typedef std::vector<TrackState> TrackStateVector;
 typedef std::vector<TrackStateHandle> TrackStateHandleContainer;
 
@@ -102,4 +104,5 @@ private:
   
 };
 
+} // Namespace
 #endif

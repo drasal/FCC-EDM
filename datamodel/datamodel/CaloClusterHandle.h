@@ -8,12 +8,14 @@
 // contains basic cluster information
 // author: C. Bernet, B. Hegner
 
-//forward declaration of CaloCluster container
-class CaloClusterCollection;
-
 namespace albers {
   class Registry;
 }
+
+namespace fccedm {
+
+//forward declaration of CaloCluster container
+class CaloClusterCollection;
 
 class CaloClusterHandle {
 
@@ -77,4 +79,5 @@ private:
 
 };
 
+} // Namespace
 #endif

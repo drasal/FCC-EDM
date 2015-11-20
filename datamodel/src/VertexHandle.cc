@@ -6,7 +6,7 @@
 #include "datamodel/Vertex.h"
 #include "datamodel/VertexCollection.h"
 
-
+namespace fccedm {
 
 bool  VertexHandle::isAvailable() const {
   if (m_container != nullptr) {
@@ -40,3 +40,5 @@ bool operator< (const VertexHandle& p1, const VertexHandle& p2 ) {
     return p1.m_containerID < p2.m_containerID;
   }
 }
+
+} // Namespace
